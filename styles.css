@@ -139,10 +139,14 @@ select{
 }
 
 .chara-info p{
-    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+    padding: 8px 0;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
 }
 
 #chara-name{
     font-size: 1.5rem;
+    font-weight: bold;
     color: var(--color-secondary);
 }
