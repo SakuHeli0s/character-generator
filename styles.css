@@ -110,7 +110,30 @@ select{
 .chara-sheet{
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 10px;
     background-color: var(--color-sheet);
+    border-radius: 15px;
+    border: 2px solid var(--color-secondary);
+    box-shadow: 0 0 20px rgba(201, 168, 76, 0.3);
+    overflow: hidden;
+}
+
+.chara-img{
+    width: 500px;
+    height: 550px;
+    flex-shrink: 0;
+}
+
+.chara-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chara-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
