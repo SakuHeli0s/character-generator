@@ -36,6 +36,7 @@ body{
     justify-content: center;
 }
 
+
 /*----ESTILOS FORMULARIO----*/
 
 .chara-select{
@@ -48,10 +49,13 @@ body{
 }
 
 .input-name{
+    width: 100%;
     background-color: var(--color-inputs);
     border: 1px solid var(--color-secondary);
     border-radius: 5px;
     padding: 12px;
+    caret-color: var(--color-secondary);
+    color: var(--color-text);
 }
 
 .input-name::placeholder{
@@ -60,8 +64,13 @@ body{
     font-weight: bold;
 }
 
+.input-name:focus{
+    border-color: var(--color-border);
+    outline: none;
+}
 
 select{
+    width: 100%;
     padding: 10px;
     line-height: 24px;
     border-radius: 5px;
@@ -76,6 +85,7 @@ select{
     background-color: var(--color-inputs);
     border: 2px solid var(--color-secondary);
     padding: 15px;
+    margin-top: 20px;
     color: var(--color-text);
     font-family: 'Cinzel';
     font-weight: bold;
@@ -86,4 +96,8 @@ select{
 
 .btn-chara:hover{
     background-color: var(--color-button);
+}
+
+.btn-chara:active{
+    transform: translateY(2px);
 }
