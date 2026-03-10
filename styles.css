@@ -107,6 +107,10 @@ select{
 
 /*-------ESTILOS TARJETA PERSONAJE-------*/
 
+#chara-container{
+    display: none;
+}
+
 .chara-sheet{
     display: flex;
     flex-direction: row;
