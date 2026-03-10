@@ -12,6 +12,7 @@
     --color-secondary: #c9a84c;
     --color-text: #ebebeb;
     --color-border: #f7f7f7;
+    --color-sheet: #16213e;
 }
 
 
@@ -22,6 +23,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 
 /*-----ESTILOS BÁSICOS-----*/
 
@@ -100,4 +102,15 @@ select{
 
 .btn-chara:active{
     transform: translateY(2px);
+}
+
+
+/*-------ESTILOS TARJETA PERSONAJE-------*/
+
+.chara-sheet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-sheet);
 }
