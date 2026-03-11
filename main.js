@@ -3,6 +3,7 @@
 const input = document.getElementById("input-name")
 const charaOption = document.getElementById("chara-option")
 const btnChara = document.getElementById("btn-chara")
+const errorMsg = document.getElementById("error-msg")
 
 const charaContainer = document.getElementById("chara-container")
 const charaImg = document.getElementById("chara-img")
@@ -24,9 +25,12 @@ const imagenes = {
 //CODIGO FORMULARIO
 
 btnChara.addEventListener("click", () => {
+    //Si el input esta vacío + mensaje error
     if(input.value === ""){
+        errorMsg.style.display = "block"
         return
     }
+    errorMsg.style.display = "none"
 
     let name = input.value 
     let clase = charaOption.value

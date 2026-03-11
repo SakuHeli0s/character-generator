@@ -7,6 +7,7 @@
 :root{
     --color-primary: #1a1a2e;
     --color-inputs: #0d0d1a;
+    --color-error: #e27e7e;
     --color-focus: #ecca6a;
     --color-button: #2d2d55;
     --color-secondary: #c9a84c;
@@ -74,6 +75,14 @@ body{
 .input-name:focus{
     border-color: var(--color-border);
     outline: none;
+}
+
+.error-msg{
+    display: none;
+    color: var(--color-error);
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
 }
 
 select{
