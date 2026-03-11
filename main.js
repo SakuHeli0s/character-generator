@@ -24,6 +24,10 @@ const imagenes = {
 //CODIGO FORMULARIO
 
 btnChara.addEventListener("click", () => {
+    if(input.value === ""){
+        return
+    }
+
     let name = input.value 
     let clase = charaOption.value
     let vida = Math.floor(Math.random() * 90) + 10
